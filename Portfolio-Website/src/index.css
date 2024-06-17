@@ -1,0 +1,39 @@
+.name {
+  position: relative;
+  padding: 0px 5px;
+  /* border-right: 3px solid gray; */
+}
+
+.lists span {
+  position: relative;
+}
+
+.lists span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-left: 2px solid black;
+  animation: typing 2s steps();
+}
+
+/* .name::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  border-left: 2px solid coral;
+  animation: typing 2s steps(12), step-end infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+  }
+} */

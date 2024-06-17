@@ -1,23 +1,50 @@
-.name {
+/* .name {
   position: relative;
   padding: 0px 5px;
   /* border-right: 3px solid gray; */
+/* } 
+*/
+.lists {
+  height: 50px;
+  /* line-height: 60px; */
+  overflow: hidden;
+}
+.list {
+  position: relative;
+  top: 0;
+  animation: slide 5s steps(2) infinite;
+
+  list-style: none;
 }
 
 .lists span {
   position: relative;
+  color: skyblue;
+  margin-left: -20px;
 }
 
 .lists span::after {
   content: "";
   position: absolute;
+
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: white;
   border-left: 2px solid black;
-  animation: typing 2s steps();
+  animation: typing 2.5s steps(22) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+  }
+}
+@keyframes slide {
+  100% {
+    top: -197%;
+  }
 }
 
 /* .name::after {

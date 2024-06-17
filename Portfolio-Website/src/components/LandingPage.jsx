@@ -13,7 +13,7 @@ export const LandingPage = () => {
             className="mx-3"
           />
         </span>
-        Hellow, I am{" "}
+        Hi, I am{" "}
         <span className="fw-bold name">
           <ul className=" text-decoration-none unlisted lists">
             <li className="text-start list">
@@ -26,7 +26,7 @@ export const LandingPage = () => {
         </span>
       </h1>
       <p className="container text-center w-50 mt-4 fw-monospace">
-        I am a pationiated towards my work and responsible for working on both
+        I am a passionated towards my work and responsible for working on both
         front-end and backend development process. Skilled in crafting
         user-centric web applications with clean code and cutting-edge
         technology. Let's transform your ideas into digital reality.

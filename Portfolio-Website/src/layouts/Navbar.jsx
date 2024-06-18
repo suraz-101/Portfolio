@@ -21,7 +21,7 @@ export const Navigation = () => {
             <Link
               to="/"
               className={`text-decoration-none  ${
-                currentPage === "" ? "text-dark fw-bold" : "text-muted"
+                currentPage === "" ? "text-sky-300 fw-bold" : "text-muted"
               }`}
             >
               Home
@@ -31,7 +31,7 @@ export const Navigation = () => {
             <Link
               to="/about"
               className={`text-decoration-none  ${
-                currentPage === "about" ? "text-dark fw-bold" : "text-muted"
+                currentPage === "about" ? "text-sky-300 fw-bold" : "text-muted"
               }`}
             >
               About
@@ -41,7 +41,9 @@ export const Navigation = () => {
             <Link
               to="/contact"
               className={`text-decoration-none  ${
-                currentPage === "contact" ? "text-dark fw-bold" : "text-muted"
+                currentPage === "contact"
+                  ? "text-sky-300 fw-bold"
+                  : "text-muted"
               }`}
             >
               Contact

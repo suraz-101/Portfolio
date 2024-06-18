@@ -10,7 +10,7 @@ export const LandingPage = () => {
             alt=""
             height="60px"
             width="60px"
-            className="mx-3"
+            className="mx-3 stroke-cyan-500"
           />
         </span>
         Hi, I am{" "}
@@ -38,6 +38,10 @@ export const LandingPage = () => {
         <button className="btn btn-outline-none border border-dark hireBtn">
           Hire Me
         </button>
+      </div>
+      <div className="text-uppercase text-center mt-5 quote font-mono text-6xl tracking-wide leading-relaxed text-slate-700 ">
+        Your Vision,
+        <br /> My Mission
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ export const Navigation = () => {
   const currentPage = pathname.split("/")[1];
 
   return (
-    <div className="container d-flex justify-content-between align-items-center py-2  ">
+    <div className="container d-flex justify-content-between align-items-center py-2   ">
       <div>
         <Navbar.Brand href="#home">Navbar</Navbar.Brand>
       </div>

@@ -1,8 +1,12 @@
 import React from "react";
 import handWaving from "../assets/waving-hand-svgrepo-com.svg";
 import image from "../assets/images/IMG_9158.png";
+import { useContext } from "react";
+import { toggleContext } from "../context/toggleContext";
+import darkImage from "../assets/images/darkmode.png";
 
 export const LandingPage = () => {
+  const { toggle } = useContext(toggleContext);
   return (
     <div className="py-6 overflow-hidden ">
       <div className="relative d-flex justify-content-lg-between justify-content-sm-center">
@@ -36,16 +40,21 @@ export const LandingPage = () => {
             technology. Let's transform your ideas into digital reality.
           </p>
           <div className="buttons d-flex justify-content-evenly mt-4 w-25 m-auto">
-            <button className="btn btn-outline-none border border-sky-200 hire">
+            <button className=" py-1 px-2  rounded bg-yellow-500 border  hire text-white-500">
               Resume
             </button>
-            <button className="btn btn-outline-none border border-dark hireBtn">
+            <button className="py-1 px-2 rounded border border-yellow-200 hireBtn text-gray-500">
               Projects
             </button>
           </div>
         </div>
         <div className="d-none d-lg-block position-absolute top-0 end-20 ">
-          <img src={image} alt="" height="50px" width="300px" />
+          <img
+            src={toggle === "light" ? image : darkImage}
+            alt=""
+            height="50px"
+            width="300px"
+          />
         </div>
       </div>
       <div className="text-uppercase text-center mt-5 quote font-mono text-8xl tracking-wide leading-relaxed text-slate-700 text-stroke-3-sky-900">

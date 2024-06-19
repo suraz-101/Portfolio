@@ -7,6 +7,7 @@ import { Nav } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { toggleContext } from "../context/toggleContext";
+import ReactSwitch from "react-switch";
 
 export const Navigation = () => {
   const { pathname } = useLocation();
@@ -22,7 +23,9 @@ export const Navigation = () => {
       className={`container d-flex justify-content-between align-items-center py-2  `}
     >
       <div>
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <span className="primary"> Navbar</span>
+        </Navbar.Brand>
       </div>
       <div>
         <Nav className="me-auto">
@@ -31,7 +34,7 @@ export const Navigation = () => {
             <Link
               to="/"
               className={`text-decoration-none  ${
-                currentPage === "" ? "text-yellow-500 fw-bold" : `text-gray-400`
+                currentPage === "" ? "text-yellow-500 fw-bold" : `secondary`
               }`}
             >
               Home
@@ -43,7 +46,7 @@ export const Navigation = () => {
               className={`text-decoration-none  ${
                 currentPage === "about"
                   ? "text-yellow-500 fw-bold"
-                  : `text-gray-400`
+                  : `secondary`
               }`}
             >
               About
@@ -55,14 +58,21 @@ export const Navigation = () => {
               className={`text-decoration-none  ${
                 currentPage === "contact"
                   ? "text-yellow-500 fw-bold"
-                  : `text-gray-400`
+                  : `secondary`
               }`}
             >
               Contact
             </Link>
           </Nav.Link>
           <Nav.Link className="text-muted">
-            <button
+            {/* <ToggleBtn onChecked={handleClick()} /> */}
+            <ReactSwitch
+              className="text-dark"
+              onChange={handleClick}
+              checked={toggle === "dark"}
+              // style={{ border: "1px solid yellow" }}
+            />
+            {/* <button
               onClick={handleClick}
               className={`text-decoration-none  ${
                 currentPage === "contact"
@@ -70,8 +80,8 @@ export const Navigation = () => {
                   : `text-gray-400`
               }`}
             >
-              {toggle} mode
-            </button>
+              {toggle} mode */}
+            {/* </button> */}
           </Nav.Link>
         </Nav>
       </div>

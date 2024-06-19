@@ -8,18 +8,18 @@ import { toggleContext } from "./context/toggleContext";
 import { Laout } from "./layouts/Laout";
 
 function App() {
-  const { toggle, setToggle } = useContext(toggleContext);
+  // const { toggle, setToggle } = useContext(toggleContext);
 
   return (
-    <div className={`${toggle}`}>
-      <Routes>
-        <Route path="/" element={<Laout />}>
-          <Route index element={<LandingPage />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </div>
+    // <div className={`${toggle}`}>
+    <Routes>
+      <Route path="/" element={<Laout />}>
+        <Route index element={<LandingPage />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+      </Route>
+    </Routes>
+    // </div>
   );
 }
 

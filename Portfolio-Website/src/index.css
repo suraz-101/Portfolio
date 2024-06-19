@@ -2,34 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --webkit-darkbackgroundcolor: #212121;
-  --webkit-lightbackgroundcolor: white;
-  --webkit-darkheader: white;
-  --webkit-normaltexts: gray;
-  --webkit-darkiconcolor: gray;
-  --webkit-lightheader: black;
-}
 .light {
-  background-color: var(--webkit-lightbackgroundcolor);
-  color: var(--webkit-lightheader);
-  transition: 0.3s ease-in-out;
+  --background: white;
+  --textColor: black;
+  --transition: 0.3s ease-in-out;
+  --header: black;
+  --secondary: gray;
 }
 
 .dark {
-  background-color: var(--webkit-darkbackgroundcolor);
-  color: var(--webkit-darkheader);
-  transition: 0.3s ease-in-out;
+  --background: #212121;
+  --textColor: white;
+  --transition: 0.3s ease-in-out;
+  --header: white;
+  --secondary: lightgray;
+}
+
+.primary {
+  color: var(--header);
+}
+
+.secondary {
+  color: var(--secondary);
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* background-color: var(--webkit-lightbackgroundcolor); */
+  background-color: var(--background);
+  transition: var(--transition);
 }
 
 .lists {
   height: 50px;
+  line-height: 50px;
   overflow: hidden;
 }
 .list {
@@ -49,25 +55,25 @@
 .light .lists span::after {
   content: "";
   position: absolute;
-  transition: 0s ease-in-out;
+  transition: 0.3s ease-in-out;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--webkit-lightbackgroundcolor);
-  border-left: 3px solid skyblue;
+  background-color: var(--background);
+  border-left: 2px solid black;
   animation: typing 2.5s steps(22) infinite;
 }
 .dark .lists span::after {
   content: "";
   position: absolute;
-  transition: 0s ease-in-out;
+  transition: 0.3s ease-in-out;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--webkit-darkbackgroundcolor);
-  border-left: 3px solid skyblue;
+  background-color: var(--background);
+  border-left: 2px solid white;
   animation: typing 2.5s steps(22) infinite;
 }
 
@@ -86,9 +92,9 @@
   border: 1px solid skyblue;
 }
 
-.description {
+/* .description {
   color: var(--webkit-normaltexts);
-}
+} */
 
 /* .name::after {
   content: "";

@@ -4,10 +4,10 @@ import image from "../assets/images/IMG_9158.png";
 
 export const LandingPage = () => {
   return (
-    <div className="py-6 overflow-hidden">
+    <div className="py-6 overflow-hidden ">
       <div className="relative d-flex justify-content-lg-between justify-content-sm-center">
-        <div className="z-10">
-          <h1 className="container d-flex justify-content-center mt-2">
+        <div className="z-0">
+          <h1 className="container d-flex justify-content-center mt-2 ">
             <span>
               <img
                 src={handWaving}
@@ -19,7 +19,7 @@ export const LandingPage = () => {
             </span>
             Hi, I am{" "}
             <span className="fw-bold name">
-              <ul className="text-decoration-none unlisted lists">
+              <ul className="text-decoration-none unlisted lists text-yellow-500">
                 <li className="text-start list">
                   <span>Suraj Pandey.</span>
                 </li>
@@ -29,7 +29,7 @@ export const LandingPage = () => {
               </ul>
             </span>
           </h1>
-          <p className="container text-center w-50 mt-4 fw-monospace">
+          <p className="container text-center w-50 mt-4 fw-monospace description">
             I am passionate about my work and responsible for working on both
             front-end and backend development processes. Skilled in crafting
             user-centric web applications with clean code and cutting-edge

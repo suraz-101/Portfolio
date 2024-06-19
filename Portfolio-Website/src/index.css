@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --webkit-darkbackgroundcolor: #212121;
+  --webkit-lightbackgroundcolor: white;
+  --webkit-darkheader: white;
+  --webkit-normaltexts: gray;
+  --webkit-darkiconcolor: gray;
+  --webkit-lightheader: black;
+}
+.light {
+  background-color: var(--webkit-lightbackgroundcolor);
+  color: var(--webkit-lightheader);
+  transition: 0.3s ease-in-out;
+}
+
+.dark {
+  background-color: var(--webkit-darkbackgroundcolor);
+  color: var(--webkit-darkheader);
+  transition: 0.3s ease-in-out;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: var(--webkit-lightbackgroundcolor); */
+}
+
 .lists {
   height: 50px;
   overflow: hidden;
@@ -16,19 +42,31 @@
 
 .lists span {
   position: relative;
-  color: skyblue;
+
   margin-left: -20px;
 }
 
-.lists span::after {
+.light .lists span::after {
   content: "";
   position: absolute;
-
+  transition: 0s ease-in-out;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-color: var(--webkit-lightbackgroundcolor);
+  border-left: 3px solid skyblue;
+  animation: typing 2.5s steps(22) infinite;
+}
+.dark .lists span::after {
+  content: "";
+  position: absolute;
+  transition: 0s ease-in-out;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--webkit-darkbackgroundcolor);
   border-left: 3px solid skyblue;
   animation: typing 2.5s steps(22) infinite;
 }
@@ -46,6 +84,10 @@
 
 .hire {
   border: 1px solid skyblue;
+}
+
+.description {
+  color: var(--webkit-normaltexts);
 }
 
 /* .name::after {

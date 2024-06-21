@@ -64,14 +64,23 @@ export const Navigation = () => {
               Contact
             </Link>
           </Nav.Link>
-          <Nav.Link className="text-muted">
+          <Nav.Link className="text-muted d-flex justify-center">
             {/* <ToggleBtn onChecked={handleClick()} /> */}
             <ReactSwitch
-              className="text-dark"
+              className="text-black bg-sky-900 dark:bg-gray-700 dark:text-white border border-gray"
               onChange={handleClick}
               checked={toggle === "dark"}
-              // style={{ border: "1px solid yellow" }}
+              width={36} // This makes the switch smaller
+              height={20} // This makes the switch smaller
             />
+            <span
+              className={`${
+                toggle === "dark" ? "text-white" : "text-black"
+              } mx-2`}
+            >
+              {toggle} mode
+            </span>
+
             {/* <button
               onClick={handleClick}
               className={`text-decoration-none  ${

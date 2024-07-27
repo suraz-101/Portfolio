@@ -30,6 +30,9 @@ export const LandingPage = () => {
                 <li className="list">
                   <span>Full Stack Developer.</span>
                 </li>
+                <li className="list">
+                  <span> Designer.</span>
+                </li>
               </ul>
             </span>
           </h1>
@@ -40,7 +43,7 @@ export const LandingPage = () => {
             technology. Let's transform your ideas into digital reality.
           </p>
           <div className="buttons d-flex justify-content-evenly mt-4 w-25 m-auto">
-            <button className=" py-2 px-4  rounded bg-yellow-600 border  hire text-white-500">
+            <button className=" py-2 px-4  rounded bg-yellow-600   hire text-white-500">
               Resume
             </button>
             <button className="py-2 px-4 rounded border border-yellow-200 hireBtn text-gray-500">

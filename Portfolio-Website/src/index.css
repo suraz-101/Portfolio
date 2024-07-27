@@ -41,7 +41,7 @@
 .list {
   position: relative;
   top: 0;
-  animation: slide 5s steps(2) infinite;
+  animation: slide 7.5s steps(3) infinite;
 
   list-style: none;
 }
@@ -84,7 +84,7 @@
 }
 @keyframes slide {
   100% {
-    top: -197%;
+    top: -305%;
   }
 }
 

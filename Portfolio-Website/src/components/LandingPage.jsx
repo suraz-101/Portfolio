@@ -56,8 +56,8 @@ export const LandingPage = () => {
             // src={toggle === "light" ? image : darkImage}
             src={image}
             alt=""
-            height="50px"
-            width="300px"
+            height="100px"
+            width="400px"
           />
         </div>
       </div>

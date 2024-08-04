@@ -8,7 +8,7 @@ import darkImage from "../assets/images/darkmode.png";
 export const LandingPage = () => {
   const { toggle } = useContext(toggleContext);
   return (
-    <div className="py-6 overflow-hidden ">
+    <div className="py-36 md:py-6 overflow-hidden ">
       <div className="relative d-flex justify-content-lg-between justify-content-sm-center">
         <div className="z-0">
           <h1 className="container d-flex justify-content-center mt-2 ">
@@ -21,9 +21,9 @@ export const LandingPage = () => {
                 className="mx-3 stroke-cyan-500"
               />
             </span>
-            <span className="primary"> Hi, I am</span>
+            <span className="primary "> Hi, I am</span>
             <span className="fw-bold name">
-              <ul className="text-decoration-none unlisted lists text-yellow-500">
+              <ul className="text-decoration-none unlisted lists text-yellow-500 ">
                 <li className=" list">
                   <span>Suraj Pandey.</span>
                 </li>
@@ -43,7 +43,7 @@ export const LandingPage = () => {
             technology. Let's transform your ideas into digital reality.
           </p>
           <div className="buttons d-flex justify-content-evenly mt-4 w-25 m-auto">
-            <button className=" py-2 px-4  rounded bg-yellow-600   hire text-white-500">
+            <button className=" py-2 px-4  rounded bg-yellow-600   hire text-white">
               Resume
             </button>
             <button className="py-2 px-4 rounded border border-yellow-200 hireBtn text-gray-500">

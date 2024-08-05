@@ -9,25 +9,18 @@ export const LandingPage = () => {
   const { toggle } = useContext(toggleContext);
   return (
     <div className="py-36 md:py-6 overflow-hidden ">
-      <div className="container relative d-flex  ">
-        <div className="z-0  flex flex-col justify-center ">
-          <div className="w-full">
-            <h1 className="container flex justify-center align-middle mt-2 ">
-              <span>
-                <img
-                  src={handWaving}
-                  alt=""
-                  height="60px"
-                  width="60px"
-                  className="mx-3 stroke-cyan-500"
-                />
+      <div className="container  flex justify-around ">
+        <div className="z-0  flex flex-col justify-center  w-50">
+          <div className="w-full ">
+            <h1 className="container  mt-2  ">
+              <span className="flex  justify-start">
+                <span className="primary flex flex-col">
+                  Hi,
+                  <span>I am Suraj Pandey</span>
+                </span>
               </span>
-              <span className="primary "> Hi, I am</span>
-              <span className="fw-bold name">
+              <span className="fw-bold name text-3xl">
                 <ul className="text-decoration-none unlisted lists text-yellow-500 ">
-                  <li className=" list">
-                    <span>Suraj Pandey.</span>
-                  </li>
                   <li className="list">
                     <span>Full Stack Developer.</span>
                   </li>
@@ -37,7 +30,7 @@ export const LandingPage = () => {
                 </ul>
               </span>
             </h1>
-            <p className="container text-center w-50 mt-4 fw-monospace description secondary">
+            <p className="container w-full mt-4 fw-monospace description secondary">
               I am passionate about my work and responsible for working on both
               front-end and backend development processes. Skilled in crafting
               user-centric web applications with clean code and cutting-edge
@@ -61,7 +54,7 @@ export const LandingPage = () => {
               <button className=" py-2 px-4  rounded bg-yellow-600   hire text-white">
                 Resume
               </button>
-              <button className="py-2 px-4 rounded border border-yellow-200 hireBtn text-gray-500">
+              <button className="py-2 px-4 rounded  border-yellow-200 hireBtn text-gray-500">
                 Projects
               </button>
             </div>

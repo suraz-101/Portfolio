@@ -51,10 +51,10 @@ export const LandingPage = () => {
               </a>
             </div>
             <div className="buttons d-flex justify-content-evenly mt-4 w-full m-auto ">
-              <button className=" py-2 px-4  rounded bg-yellow-600   hire text-white">
+              <button className=" py-2 px-4 rounded bg-yellow-600 shadow   text-white">
                 Resume
               </button>
-              <button className="py-2 px-4 rounded  border-yellow-200 hireBtn text-gray-500">
+              <button className="py-2 px-4 rounded border shadow hireBtn text-yellow-500">
                 Projects
               </button>
             </div>
@@ -65,9 +65,10 @@ export const LandingPage = () => {
           <img
             // src={toggle === "light" ? image : darkImage}
             src={image}
-            alt=""
+            alt="Profile"
             height="100px"
             width="400px"
+            loading="lazy"
           />
         </div>
       </div>

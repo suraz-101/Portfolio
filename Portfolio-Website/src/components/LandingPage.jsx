@@ -76,6 +76,130 @@ export const LandingPage = () => {
         Your Vision,
         <br /> My Mission
       </div>
+      <div className="text-textColor  bg-transparent py-10 bg-slate-950">
+        <h2 className="text-center text-2xl font-bold leading-8">My Skills</h2>
+        <p className="text-center text-lg font-extralight leading-8">
+          I have expertise on ...
+        </p>
+
+        <div className="logos group relative overflow-hidden whitespace-nowrap [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]">
+          <div className="animate-slide-left group-hover:animation-pause inline-block w-max">
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/express-109.svg"
+              alt="ExpressJS"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg"
+              alt="Node.js"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
+              alt="JavaScript"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg"
+              alt="MongoDB"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
+              alt="ReactJS"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/java-14.svg"
+              alt="Java"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/c--4.svg"
+              alt="C#"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/c.svg"
+              alt="C"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/html-1.svg"
+              alt="HTML"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/css-3.svg"
+              alt="CSS"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg"
+              alt="Tailwind CSS"
+            />
+          </div>
+
+          <div className="animate-slide-left group-hover:animation-pause inline-block w-max">
+            <img
+              className="mx-4 inline h-16 "
+              src="https://cdn.worldvectorlogo.com/logos/express-109.svg"
+              alt="ExpressJS"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg"
+              alt="Node.js"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
+              alt="JavaScript"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg"
+              alt="MongoDB"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
+              alt="ReactJS"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/java-14.svg"
+              alt="Java"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/c--4.svg"
+              alt="C#"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/c.svg"
+              alt="C"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/html-1.svg"
+              alt="HTML"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/css-3.svg"
+              alt="CSS"
+            />
+            <img
+              className="mx-4 inline h-16"
+              src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg"
+              alt="Tailwind CSS"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

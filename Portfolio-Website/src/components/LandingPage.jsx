@@ -11,7 +11,7 @@ export const LandingPage = () => {
     <div className="py-36 md:py-6 overflow-hidden ">
       <div className="container  flex justify-around ">
         <div className="z-0  flex flex-col justify-center  w-50">
-          <div className="w-full ">
+          <div className="w-full  ">
             <h1 className="container  mt-2  ">
               <span className="flex  justify-start">
                 <span className="primary flex flex-col">

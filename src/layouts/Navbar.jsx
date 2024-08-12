@@ -28,7 +28,7 @@ export const Navigation = () => {
             <span className="primary">
               {" "}
               Suraj{" "}
-              <span className="bg-black text-white py-1 px-2">Pandey</span>
+              <span className="bg-black text-yellow-500 py-1 px-2">Pandey</span>
             </span>
           </Navbar.Brand>
         </div>

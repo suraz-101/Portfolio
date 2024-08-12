@@ -25,7 +25,11 @@ export const Navigation = () => {
       >
         <div>
           <Navbar.Brand href="#home">
-            <span className="primary"> Navbar</span>
+            <span className="primary">
+              {" "}
+              Suraj{" "}
+              <span className="bg-black text-white py-1 px-2">Pandey</span>
+            </span>
           </Navbar.Brand>
         </div>
         <div>

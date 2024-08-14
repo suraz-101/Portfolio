@@ -10,7 +10,7 @@ export const LandingPage = () => {
   return (
     <div className="py-36 md:py-6 overflow-hidden ">
       <div className="container  flex justify-around ">
-        <div className="z-0  flex flex-col justify-center  w-50">
+        <div className="z-0   flex flex-col justify-center w-full lg:w-50">
           <div className="w-full  ">
             <h1 className="container  mt-2  ">
               <span className="flex  justify-start">
@@ -61,7 +61,7 @@ export const LandingPage = () => {
           </div>
         </div>
 
-        <div className="d-none d-lg-block top-0 end-20 ">
+        <div className="d-none d-lg-block top-0 end-20  w-50  ">
           <img
             // src={toggle === "light" ? image : darkImage}
             src={image}

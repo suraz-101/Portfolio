@@ -4,6 +4,7 @@
 
 .light {
   --background: white;
+  /* --secondaryBg: rgb(228, 225, 225); */
   --textColor: black;
   --transition: 0.3s ease-in-out;
   --header: black;

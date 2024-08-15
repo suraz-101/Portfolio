@@ -9,8 +9,8 @@ export const LandingPage = () => {
   const { toggle } = useContext(toggleContext);
   return (
     <div className="py-36 md:py-6 overflow-hidden ">
-      <div className="container  flex justify-around ">
-        <div className="z-0   flex flex-col justify-center w-full lg:w-50">
+      <div className="container  flex justify-around  ">
+        <div className="z-0   flex flex-col justify-center w-full lg:w-50 ">
           <div className="w-full  ">
             <h1 className="container  mt-2  ">
               <span className="flex  justify-start">

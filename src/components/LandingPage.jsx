@@ -77,7 +77,9 @@ export const LandingPage = () => {
         <br /> My Mission
       </div>
       <div className="text-textColor  bg-transparent py-10 bg-slate-950">
-        <h2 className="text-center text-2xl font-bold leading-8">My Skills</h2>
+        <h6 className="text-center text-2xl font-bold leading-8">
+          My Skills & Tools
+        </h6>
         <p className="text-center text-lg font-extralight leading-8">
           I have expertise on ...
         </p>
@@ -199,6 +201,14 @@ export const LandingPage = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="text-textColor  bg-transparent py-10 bg-slate-950">
+        <h6 className="text-center text-2xl font-bold leading-8">Services</h6>
+        <p className="text-center text-lg font-extralight leading-8">
+          I have expertise on ...
+        </p>
+
+        <div className="container logos group relative overflow-hidden whitespace-nowrap "></div>
       </div>
     </div>
   );

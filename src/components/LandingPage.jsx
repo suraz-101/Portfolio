@@ -8,10 +8,10 @@ import darkImage from "../assets/images/darkmode.png";
 export const LandingPage = () => {
   const { toggle } = useContext(toggleContext);
   return (
-    <div className="py-36 md:py-6 overflow-hidden ">
-      <div className="container  flex justify-around  ">
+    <div className="py-28 md:py-6 overflow-hidden ">
+      <div className="container  flex flex-col-reverse align-middle lg:flex-row justify-around  ">
         <div className="z-0   flex flex-col justify-center w-full lg:w-50 ">
-          <div className="w-full  ">
+          <div className="w-full  py-10 lg:py-0 ">
             <h1 className="container  mt-2  ">
               <span className="flex  justify-start">
                 <span className="primary flex flex-col">
@@ -61,7 +61,7 @@ export const LandingPage = () => {
           </div>
         </div>
 
-        <div className="d-none d-lg-block top-0 end-20  w-50  ">
+        <div className="  top-0 end-20  w-full lg:w-50 h-full flex justify-center  ">
           <img
             // src={toggle === "light" ? image : darkImage}
             src={image}

@@ -6,6 +6,8 @@ import { toggleContext } from "../context/toggleContext";
 import darkImage from "../assets/images/darkmode.png";
 import { useRef } from "react";
 import portfolio from "../assets/images/porfolio.png";
+import eCommerce from "../assets/images/eCommerce.png";
+import blogApplication from "../assets/images/blogApplication.png";
 
 export const LandingPage = () => {
   const { toggle } = useContext(toggleContext);
@@ -235,49 +237,63 @@ export const LandingPage = () => {
                 alt="Project 2"
                 className="w-full h-full object-cover rounded-t-lg"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black opacity-60"></div>
               <div className="content absolute bottom-0 bg-transparent  w-full text-center p-4">
                 <h2 className="bg-transparent text-white">Portfolio Website</h2>
               </div>
             </div>
             {/* Slide Card 3 */}
-            <div className="flex-none w-80 bg-white rounded-lg shadow-lg m-4">
+            <div className="relative flex-none w-80 bg-white rounded-lg shadow-lg m-4 ">
               <img
-                src="https://via.placeholder.com/300"
-                alt="Project 3"
-                className="w-full h-48 object-cover rounded-t-lg"
+                src={eCommerce}
+                height="300px"
+                width="300px"
+                alt="Project 2"
+                className="w-full h-full object-cover rounded-t-lg"
               />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Project 3
-                </h3>
-                <p className="text-gray-600 mt-2">Description of project 3.</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+              <div className="content absolute bottom-0 bg-transparent  w-full text-center p-4">
+                <h2 className="bg-transparent text-white">E-commerce</h2>
               </div>
             </div>
-            <div className="flex-none w-80 bg-white rounded-lg shadow-lg m-4">
+
+            <div className="relative flex-none w-80 bg-white rounded-lg shadow-lg m-4 ">
               <img
-                src="https://via.placeholder.com/300"
-                alt="Project 3"
-                className="w-full h-48 object-cover rounded-t-lg"
+                src={blogApplication}
+                height="300px"
+                width="300px"
+                alt="Project 2"
+                className="w-full h-full object-cover rounded-t-lg"
               />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Project 3
-                </h3>
-                <p className="text-gray-600 mt-2">Description of project 3.</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+              <div className="content absolute bottom-0 bg-transparent  w-full text-center p-4">
+                <h2 className="bg-transparent text-white">Blog App</h2>
               </div>
             </div>
-            <div className="flex-none w-80 bg-white rounded-lg shadow-lg m-4">
+            <div className="relative flex-none w-80 bg-white rounded-lg shadow-lg m-4 ">
               <img
-                src="https://via.placeholder.com/300"
-                alt="Project 3"
-                className="w-full h-48 object-cover rounded-t-lg"
+                src="https://5.imimg.com/data5/SELLER/Default/2023/6/317349987/XW/BS/AF/12870604/international-courier-services-500x500.jpg"
+                height="300px"
+                width="300px"
+                alt="Project 2"
+                className="w-full h-full object-cover rounded-t-lg"
               />
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Project 3
-                </h3>
-                <p className="text-gray-600 mt-2">Description of project 3.</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+              <div className="content absolute bottom-0 bg-transparent  w-full text-center p-4">
+                <h2 className="bg-transparent text-white">Courrier System</h2>
+              </div>
+            </div>
+            <div className="relative flex-none w-80 bg-white rounded-lg shadow-lg m-4 ">
+              <img
+                src="https://ibsintelligence.com/wp-content/uploads/2022/03/ibs_Core-Banking.jpg"
+                height="300px"
+                width="300px"
+                alt="Project 2"
+                className="w-full h-full object-cover rounded-t-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+              <div className="content absolute bottom-0 bg-transparent  w-full text-center p-4">
+                <h2 className="bg-transparent text-white">Courrier System</h2>
               </div>
             </div>
             {/* Add more slides as needed */}

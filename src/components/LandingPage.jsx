@@ -4,9 +4,22 @@ import image from "../assets/images/IMG_9158.png";
 import { useContext } from "react";
 import { toggleContext } from "../context/toggleContext";
 import darkImage from "../assets/images/darkmode.png";
+import { useRef } from "react";
+import portfolio from "../assets/images/porfolio.png";
 
 export const LandingPage = () => {
   const { toggle } = useContext(toggleContext);
+  const sliderRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollBy({
+        left: direction === "left" ? -300 : 300,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="py-28 md:py-6 overflow-hidden ">
       <div className="container  flex flex-col-reverse align-middle lg:flex-row justify-around  ">
@@ -72,12 +85,12 @@ export const LandingPage = () => {
           />
         </div>
       </div>
-      <div className="text-uppercase text-center mt-5 quote font-mono text-8xl tracking-wide leading-relaxed text-slate-700 text-stroke-3-sky-900 primary ">
+      <div className="text-uppercase text-center mt-5 quote font-mono text-3xl md:text-7xl tracking-wide leading-relaxed text-slate-700 text-stroke-3-sky-900 primary ">
         Your Vision,
         <br /> My Mission
       </div>
-      <div className="text-textColor  bg-transparent py-10 bg-slate-950">
-        <h6 className="text-center text-2xl font-bold leading-8">
+      <div className="text-textColor   py-20 ">
+        <h6 className="text-center text-5xl font-bold leading-8  ">
           My Skills & Tools
         </h6>
         <p className="text-center text-lg font-extralight leading-8">
@@ -202,13 +215,106 @@ export const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="text-textColor  bg-transparent py-10 bg-slate-950">
-        <h6 className="text-center text-2xl font-bold leading-8">Services</h6>
+      {/* start of the project section */}
+      <div className="text-textColor   py-20 ">
+        <h6 className="text-center text-5xl font-bold leading-8  ">Projects</h6>
         <p className="text-center text-lg font-extralight leading-8">
-          I have expertise on ...
+          Projects I have worked on ...
         </p>
+        <div className="relative overflow-hidden container">
+          <div
+            ref={sliderRef}
+            className="flex items-center overflow-x-scroll scroll-smooth scrollbar-hide"
+          >
+            {/* Slide Card 1 */}
 
-        <div className="container logos group relative overflow-hidden whitespace-nowrap "></div>
+            {/* Slide Card 2 */}
+            <div className="relative flex-none w-80 bg-white rounded-lg shadow-lg m-4 ">
+              <img
+                src={portfolio}
+                alt="Project 2"
+                className="w-full h-full object-cover rounded-t-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
+              <div className="content absolute bottom-0 bg-transparent  w-full text-center p-4">
+                <h2 className="bg-transparent text-white">Portfolio Website</h2>
+              </div>
+            </div>
+            {/* Slide Card 3 */}
+            <div className="flex-none w-80 bg-white rounded-lg shadow-lg m-4">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Project 3"
+                className="w-full h-48 object-cover rounded-t-lg"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Project 3
+                </h3>
+                <p className="text-gray-600 mt-2">Description of project 3.</p>
+              </div>
+            </div>
+            <div className="flex-none w-80 bg-white rounded-lg shadow-lg m-4">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Project 3"
+                className="w-full h-48 object-cover rounded-t-lg"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Project 3
+                </h3>
+                <p className="text-gray-600 mt-2">Description of project 3.</p>
+              </div>
+            </div>
+            <div className="flex-none w-80 bg-white rounded-lg shadow-lg m-4">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Project 3"
+                className="w-full h-48 object-cover rounded-t-lg"
+              />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Project 3
+                </h3>
+                <p className="text-gray-600 mt-2">Description of project 3.</p>
+              </div>
+            </div>
+            {/* Add more slides as needed */}
+          </div>
+
+          {/* Navigation Buttons */}
+          <button
+            onClick={() => scroll("left")}
+            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-backgroundColor text-white rounded-full p-2 shadow-lg  transition duration-300"
+          >
+            <svg
+              className="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path d="M15 19l-7-7 7-7" stroke="currentColor" />
+            </svg>
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-backgroundColor text-white rounded-full p-2 shadow-lg  transition duration-300"
+          >
+            <svg
+              className="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M9 5l7 7-7 7"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   );

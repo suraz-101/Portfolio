@@ -75,7 +75,7 @@ export const LandingPage = () => {
                 <button className=" py-2 px-4 rounded bg-yellow-600 shadow   text-white">
                   Resume
                 </button>
-                <button className="py-2 px-4 rounded border shadow hireBtn text-yellow-500">
+                <button className="py-2 px-4 rounded  shadow hireBtn text-yellow-500 bg-secondaryBg">
                   Projects
                 </button>
               </div>
@@ -239,7 +239,7 @@ export const LandingPage = () => {
           <p className="text-center text-lg font-extralight leading-8">
             Projects I have worked on ...
           </p>
-          <div className="relative overflow-hidden container">
+          <div className="relative overflow-hidden container ">
             <div
               ref={sliderRef}
               className="flex items-center overflow-x-scroll scroll-smooth scrollbar-hide"

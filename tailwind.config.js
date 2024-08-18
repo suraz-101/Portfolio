@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         backgroundColor: "var(--background)",
+        secondaryBg: "var(--secondaryBackground)",
         // secondaryBg: "var(--secondaryBg)",
         textColor: "var(--textColor)",
         header: "var(--header)",

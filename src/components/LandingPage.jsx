@@ -8,8 +8,8 @@ import { useRef } from "react";
 import portfolio from "../assets/images/porfolio.png";
 import eCommerce from "../assets/images/eCommerce.png";
 import blogApplication from "../assets/images/blogApplication.png";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
+// import Fade from "react-reveal/Fade";
 
 export const LandingPage = () => {
   const { toggle } = useContext(toggleContext);
@@ -84,7 +84,7 @@ export const LandingPage = () => {
         </div>
 
         <div className="  top-0 end-20  w-full lg:w-50 h-full flex justify-center  ">
-          <Zoom>
+          <Fade>
             <img
               // src={toggle === "light" ? image : darkImage}
               src={image}
@@ -93,17 +93,17 @@ export const LandingPage = () => {
               width="400px"
               loading="lazy"
             />
-          </Zoom>
+          </Fade>
         </div>
       </div>
       <div className="text-uppercase text-center mt-5 quote font-mono text-3xl md:text-7xl tracking-wide leading-relaxed text-slate-700 text-stroke-3-sky-900 primary ">
-        <Fade top>
+        <Fade damping={0.2}>
           Your Vision,
           <br /> My Mission
         </Fade>
       </div>
       <div className="text-textColor   py-20 ">
-        <Fade top>
+        <Fade damping={0.2}>
           <h6 className="text-center text-5xl font-bold leading-8  ">
             My Skills & Tools
           </h6>
@@ -232,7 +232,7 @@ export const LandingPage = () => {
       </div>
       {/* start of the project section */}
       <div className="text-textColor   py-20 ">
-        <Fade top>
+        <Fade damping={0.2}>
           <h6 className="text-center text-5xl font-bold leading-8  ">
             Projects
           </h6>

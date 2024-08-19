@@ -51,11 +51,7 @@ export const Skills = () => {
                 src="https://cdn.worldvectorlogo.com/logos/c--4.svg"
                 alt="C#"
               />
-              <img
-                className="mx-4 inline h-16"
-                src="https://cdn.worldvectorlogo.com/logos/c.svg"
-                alt="C"
-              />
+
               <img
                 className="mx-4 inline h-16"
                 src="https://cdn.worldvectorlogo.com/logos/html-1.svg"
@@ -109,11 +105,7 @@ export const Skills = () => {
                 src="https://cdn.worldvectorlogo.com/logos/c--4.svg"
                 alt="C#"
               />
-              <img
-                className="mx-4 inline h-16"
-                src="https://cdn.worldvectorlogo.com/logos/c.svg"
-                alt="C"
-              />
+
               <img
                 className="mx-4 inline h-16"
                 src="https://cdn.worldvectorlogo.com/logos/html-1.svg"

@@ -13,6 +13,8 @@ export const Navigation = () => {
   const { pathname } = useLocation();
   const currentPage = pathname.split("/")[1];
   const { toggle, setToggle } = useContext(toggleContext);
+  // This code should be added to <head>.
+  // It's used to prevent page load glitches.
 
   const handleClick = () => {
     setToggle(toggle === "light" ? "dark" : "light");

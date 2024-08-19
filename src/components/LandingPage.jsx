@@ -36,9 +36,7 @@ export const LandingPage = () => {
                 <span className="flex  justify-start">
                   <span className="primary flex flex-col">
                     Hi,
-                    <span className="text-textColor transition-all">
-                      I am Suraj Pandey
-                    </span>
+                    <span className="text-textColor ">I am Suraj Pandey</span>
                   </span>
                 </span>
                 <span className="fw-bold name text-3xl">

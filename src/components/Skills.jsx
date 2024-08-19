@@ -5,7 +5,7 @@ export const Skills = () => {
   return (
     <>
       {" "}
-      <div className="text-textColor   py-20 ">
+      <div className="text-textColor   py-11 ">
         <Fade damping={0.2}>
           <h6 className="text-center text-5xl font-bold leading-8  ">
             My Skills & Tools

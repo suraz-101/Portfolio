@@ -1,13 +1,7 @@
-import React from "react";
-import handWaving from "../assets/waving-hand-svgrepo-com.svg";
 import image from "../assets/images/IMG_9158.png";
 import { useContext } from "react";
 import { toggleContext } from "../context/toggleContext";
-import darkImage from "../assets/images/darkmode.png";
-import { useRef } from "react";
-import portfolio from "../assets/images/porfolio.png";
-import eCommerce from "../assets/images/eCommerce.png";
-import blogApplication from "../assets/images/blogApplication.png";
+
 import { Fade } from "react-awesome-reveal";
 import { Projects } from "./Projects";
 import { Skills } from "./Skills";
@@ -96,10 +90,12 @@ export const LandingPage = () => {
           </Fade>
         </div>
       </div>
-      <div className="text-uppercase text-center mt-5 quote font-mono text-3xl md:text-7xl tracking-wide leading-relaxed text-slate-700 text-stroke-3-sky-900 primary ">
+      <div className="  text-uppercase text-center py-28 quote font-mono text-3xl md:text-7xl tracking-wide leading-relaxed  primary ">
         <Fade damping={0.2}>
-          Your Vision,
-          <br /> My Mission
+          <span className="text-spacing-2 text-textColor">
+            {" "}
+            Your Vision, My Mission
+          </span>
         </Fade>
       </div>
       <Skills />

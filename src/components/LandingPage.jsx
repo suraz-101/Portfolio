@@ -23,11 +23,11 @@ export const LandingPage = () => {
   return (
     <div className="py-28 md:py-6 overflow-hidden ">
       <div className="container  flex flex-col-reverse align-middle lg:flex-row justify-around  ">
-        <div className="z-0   flex flex-col justify-center w-full lg:w-50 ">
+        <div className="z-0   flex flex-col justify-center w-full lg:w-50 font-mono ">
           <div className="w-full  py-10 lg:py-0 ">
             <Fade top>
               <h1 className="container  mt-2  ">
-                <span className="flex  justify-start">
+                <span className="flex  justify-start ">
                   <span className="primary flex flex-col">
                     Hi,
                     <span className="text-textColor ">I am Suraj Pandey</span>

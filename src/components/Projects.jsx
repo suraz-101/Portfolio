@@ -19,12 +19,12 @@ export const Projects = () => {
   return (
     <>
       {" "}
-      <div className="text-textColor   py-20 ">
+      <div className="text-textColor  py-20 ">
         <Fade damping={0.2}>
-          <h6 className="text-center text-5xl font-bold leading-8  ">
+          <h6 className="text-center text-5xl font-bold leading-8 font-mono ">
             Projects
           </h6>
-          <p className="text-center text-lg font-extralight leading-8">
+          <p className="text-center text-lg font-extralight leading-8 font-mono">
             Projects I have worked on ...
           </p>
           <div className="relative overflow-hidden container ">

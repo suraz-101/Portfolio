@@ -23,7 +23,7 @@ export const Navigation = () => {
   return (
     <>
       <div
-        className={`container hidden md:flex justify-content-between align-items-center py-2  `}
+        className={`container hidden md:flex justify-content-between align-items-center py-2 font-mono `}
       >
         <div>
           <Navbar.Brand href="#home">
@@ -57,6 +57,18 @@ export const Navigation = () => {
                 }`}
               >
                 About
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="text-muted">
+              <Link
+                to="/blogs"
+                className={`text-decoration-none  ${
+                  currentPage === "blogs"
+                    ? "text-yellow-500 fw-bold"
+                    : `secondary`
+                }`}
+              >
+                Blogs
               </Link>
             </Nav.Link>
             <Nav.Link className="text-muted">
@@ -141,6 +153,20 @@ export const Navigation = () => {
               }`}
             >
               About
+            </span>
+          </Link>
+          <Link to="/blogs" className="text-decoration-none text-center">
+            <i
+              className={`fa fa-book ${
+                currentPage === "blogs" ? "text-yellow-500" : "text-textColor"
+              }`}
+            ></i>
+            <span
+              className={`block text-xs  ${
+                currentPage === "about" ? "text-yellow-500" : "text-textColor"
+              }`}
+            >
+              Blogs
             </span>
           </Link>
           <Link to="/contact" className="text-decoration-none text-center">

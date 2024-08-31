@@ -21,8 +21,8 @@ export const LandingPage = () => {
   // };
 
   return (
-    <div className="py-28 md:py-6 overflow-hidden ">
-      <div className="container  flex flex-col-reverse align-middle lg:flex-row justify-around  ">
+    <div className="py-28 md:py-10  overflow-hidden ">
+      <div className="container  flex flex-col-reverse align-middle lg:flex-row justify-around py-10 ">
         <div className="z-0   flex flex-col justify-center w-full lg:w-50 font-mono ">
           <div className="w-full  py-10 lg:py-0 ">
             <Fade top>
@@ -90,10 +90,9 @@ export const LandingPage = () => {
           </Fade>
         </div>
       </div>
-      <div className="  text-uppercase text-center py-28 quote font-mono text-3xl md:text-7xl tracking-wide leading-relaxed  primary ">
-        <Fade damping={0.2}>
-          <span className="text-spacing-2 text-textColor">
-            {" "}
+      <div className="  text-uppercase text-center py-28 quote font-mono text-3xl md:text-7xl tracking-wide leading-relaxed  primary  ">
+        <Fade damping={0.2} className="bg-transparent">
+          <span className="text-spacing-2 text-textColor bg-transparent">
             Your Vision, My Mission
           </span>
         </Fade>

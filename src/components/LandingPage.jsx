@@ -39,7 +39,7 @@ export const LandingPage = () => {
                       <span>Full Stack Developer.</span>
                     </li>
                     <li className="list">
-                      <span> Designer.</span>
+                      <span> Digital Marketer.</span>
                     </li>
                   </ul>
                 </span>

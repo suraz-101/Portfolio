@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import image1 from "../assets/images/mernstack.jpg";
 import image2 from "../assets/images/googleanalytics.jpg";
 import image3 from "../assets/images/contentmarketing .jpg";
-import image4 from "../assets/images/persona.webp";
+import image4 from "../assets/images/persona.png";
 import { useContext } from "react";
 import { toggleContext } from "../context/toggleContext";
 import { Link } from "react-router-dom";

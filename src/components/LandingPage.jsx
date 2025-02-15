@@ -21,9 +21,9 @@ export const LandingPage = () => {
   // };
 
   return (
-    <div className="py-28 md:py-10  overflow-hidden ">
+    <div className="py-28 md:py-10  overflow-hidden font-serif">
       <div className="container  flex flex-col-reverse align-middle lg:flex-row justify-around py-10 ">
-        <div className="z-0   flex flex-col justify-center w-full lg:w-50 font-mono ">
+        <div className="z-0   flex flex-col justify-center w-full lg:w-50 font-serif ">
           <div className="w-full  py-10 lg:py-0 ">
             <Fade top>
               <h1 className="container  mt-2  ">
@@ -44,7 +44,7 @@ export const LandingPage = () => {
                   </ul>
                 </span>
               </h1>
-              <p className="container w-full mt-4 fw-monospace description secondary">
+              <p className="container w-full mt-4 font-serif fw-monospace description secondary">
                 I am passionate about my work and responsible for working on
                 both front-end and backend development processes. Skilled in
                 crafting user-centric web applications with clean code and
@@ -66,10 +66,10 @@ export const LandingPage = () => {
                 </a>
               </div>
               <div className="buttons d-flex justify-content-evenly mt-4 w-full m-auto ">
-                <button className=" py-2 px-4 rounded bg-yellow-600 shadow   text-white">
+                <button className=" py-2 px-4 rounded bg-black shadow   text-white">
                   Resume
                 </button>
-                <button className="py-2 px-4 rounded  shadow hireBtn text-yellow-500 bg-secondaryBg">
+                <button className="py-2 px-4 rounded  shadow hireBtn text-black bg-white">
                   Projects
                 </button>
               </div>
@@ -90,9 +90,9 @@ export const LandingPage = () => {
           </Fade>
         </div>
       </div>
-      <div className="  text-uppercase text-center py-28 quote font-mono text-3xl md:text-7xl tracking-wide leading-relaxed  primary  ">
-        <Fade damping={0.2} className="bg-transparent">
-          <span className="text-spacing-2 text-textColor bg-transparent">
+      <div className="  text-uppercase text-center py-28 quote font-serif text-3xl md:text-7xl tracking-wide leading-relaxed  primary bg-black ">
+        <Fade damping={0.2} className="bg-black">
+          <span className="text-spacing-2 text-white bg-black">
             Your Vision, My Mission
           </span>
         </Fade>

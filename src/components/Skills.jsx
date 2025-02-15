@@ -7,10 +7,10 @@ export const Skills = () => {
       {" "}
       <div className=" skills text-textColor     py-11 ">
         <Fade damping={0.2}>
-          <h6 className="text-center text-3xl font-bold leading-8 font-mono md:text-5xl  ">
+          <h6 className="text-center text-3xl font-bold leading-8 font-serif md:text-5xl  ">
             My Skills & Tools
           </h6>
-          <p className="text-center text-lg  leading-8 font-mono  ">
+          <p className="text-center text-lg  leading-8 font-serif  ">
             I have expertise on ...
           </p>
 

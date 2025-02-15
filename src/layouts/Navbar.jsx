@@ -23,14 +23,14 @@ export const Navigation = () => {
   return (
     <>
       <div
-        className={`container hidden md:flex justify-content-between align-items-center py-2 font-mono `}
+        className={`container hidden md:flex justify-content-between align-items-center py-4 font-serif font-semibold `}
       >
         <div>
           <Navbar.Brand href="#home">
             <span className="primary">
               {" "}
               Suraj{" "}
-              <span className="bg-yellow-500 text-white py-1 px-2">Pandey</span>
+              <span className="bg-black text-white py-1 px-2">Pandey</span>
             </span>
           </Navbar.Brand>
         </div>
@@ -41,7 +41,7 @@ export const Navigation = () => {
               <Link
                 to="/"
                 className={`text-decoration-none  ${
-                  currentPage === "" ? "text-yellow-500 fw-bold" : `secondary`
+                  currentPage === "" ? "text-black fw-bold" : `secondary`
                 }`}
               >
                 Home
@@ -49,11 +49,19 @@ export const Navigation = () => {
             </Nav.Link>
             <Nav.Link className="text-muted">
               <Link
+                to="/service"
+                className={`text-decoration-none  ${
+                  currentPage === "service" ? "text-black fw-bold" : `secondary`
+                }`}
+              >
+                Services
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="text-muted">
+              <Link
                 to="/about"
                 className={`text-decoration-none  ${
-                  currentPage === "about"
-                    ? "text-yellow-500 fw-bold"
-                    : `secondary`
+                  currentPage === "about" ? "text-black fw-bold" : `secondary`
                 }`}
               >
                 About
@@ -63,9 +71,7 @@ export const Navigation = () => {
               <Link
                 to="/blogs"
                 className={`text-decoration-none  ${
-                  currentPage === "blogs"
-                    ? "text-yellow-500 fw-bold"
-                    : `secondary`
+                  currentPage === "blogs" ? "text-black fw-bold" : `secondary`
                 }`}
               >
                 Blogs
@@ -75,9 +81,7 @@ export const Navigation = () => {
               <Link
                 to="/contact"
                 className={`text-decoration-none  ${
-                  currentPage === "contact"
-                    ? "text-yellow-500 fw-bold"
-                    : `secondary`
+                  currentPage === "contact" ? "text-black fw-bold" : `secondary`
                 }`}
               >
                 Contact
@@ -130,26 +134,40 @@ export const Navigation = () => {
           <Link to="/" className="text-decoration-none text-center">
             <i
               className={`fa fa-home  ${
-                currentPage === "" ? "text-yellow-500" : "text-textColor"
+                currentPage === "" ? "text-black" : "secondary"
               }`}
             ></i>
             <span
               className={`block text-xs  ${
-                currentPage === "" ? "text-yellow-500" : "text-textColor"
+                currentPage === "" ? "text-black" : "secondary"
               }`}
             >
               Home
             </span>
           </Link>
-          <Link to="/about" className="text-decoration-none text-center">
+          <Link to="/service" className="text-decoration-none text-center">
             <i
-              className={`fa fa-info-circle ${
-                currentPage === "about" ? "text-yellow-500" : "text-textColor"
+              className={`fa fa-wrench  ${
+                currentPage === "service" ? "text-black" : "secondary"
               }`}
             ></i>
             <span
               className={`block text-xs  ${
-                currentPage === "about" ? "text-yellow-500" : "text-textColor"
+                currentPage === "service" ? "text-black" : "secondary"
+              }`}
+            >
+              Service
+            </span>
+          </Link>
+          <Link to="/about" className="text-decoration-none text-center">
+            <i
+              className={`fa fa-info-circle ${
+                currentPage === "about" ? "text-black" : "secondary"
+              }`}
+            ></i>
+            <span
+              className={`block text-xs  ${
+                currentPage === "about" ? "text-black" : "secondary"
               }`}
             >
               About
@@ -158,12 +176,12 @@ export const Navigation = () => {
           <Link to="/blogs" className="text-decoration-none text-center">
             <i
               className={`fa fa-book ${
-                currentPage === "blogs" ? "text-yellow-500" : "text-textColor"
+                currentPage === "blogs" ? "text-black" : "secondary"
               }`}
             ></i>
             <span
               className={`block text-xs  ${
-                currentPage === "about" ? "text-yellow-500" : "text-textColor"
+                currentPage === "about" ? "text-black" : "secondary"
               }`}
             >
               Blogs
@@ -172,12 +190,12 @@ export const Navigation = () => {
           <Link to="/contact" className="text-decoration-none text-center">
             <i
               className={`fa fa-envelope ${
-                currentPage === "contact" ? "text-yellow-500" : "text-textColor"
+                currentPage === "contact" ? "text-black" : "secondary"
               }`}
             ></i>
             <span
               className={`block text-xs  ${
-                currentPage === "contact" ? "text-yellow-500" : "text-textColor"
+                currentPage === "contact" ? "text-black" : "secondary"
               }`}
             >
               Contact

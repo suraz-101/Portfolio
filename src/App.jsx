@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import { About } from "./components/About";
 import { Blogs } from "./components/Blogs";
 import { Contact } from "./components/Contact";
+import { Error } from "./components/Error";
 import { LandingPage } from "./components/LandingPage";
 import { Service } from "./components/Service";
 import { toggleContext } from "./context/toggleContext";
@@ -22,6 +23,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="blogs" element={<Blogs />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="error-page" element={<Error />} />
       </Route>
     </Routes>
     // </div>

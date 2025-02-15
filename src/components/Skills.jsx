@@ -5,16 +5,13 @@ export const Skills = () => {
   return (
     <>
       {" "}
-      <div className=" skills text-textColor     py-11 ">
+      <div className=" skills text-textColor py-20 ">
         <Fade damping={0.2}>
-          <h6 className="text-center text-3xl font-bold leading-8 font-serif md:text-5xl  ">
-            My Skills & Tools
+          <h6 className="text-center text-3xl md:text-5xl font-bold leading-8 font-serif ">
+            Skills
           </h6>
-          <p className="text-center text-lg  leading-8 font-serif  ">
-            I have expertise on ...
-          </p>
 
-          <div className="  container logos group relative overflow-hidden whitespace-nowrap [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]">
+          <div className="  container logos group py-20 relative overflow-hidden whitespace-nowrap [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]">
             <div className="animate-slide-left group-hover:animation-pause inline-block w-max  ">
               <img
                 className="mx-4 inline h-10 lg:h-16  "

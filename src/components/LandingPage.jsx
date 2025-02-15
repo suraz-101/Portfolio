@@ -5,6 +5,7 @@ import { toggleContext } from "../context/toggleContext";
 import { Fade } from "react-awesome-reveal";
 import { Projects } from "./Projects";
 import { Skills } from "./Skills";
+import { Service } from "./Service";
 // import Fade from "react-reveal/Fade";
 
 export const LandingPage = () => {
@@ -97,9 +98,11 @@ export const LandingPage = () => {
           </span>
         </Fade>
       </div>
-      <Skills />
+      <Service />
+
       {/* start of the project section */}
       <Projects />
+      <Skills />
     </div>
   );
 };

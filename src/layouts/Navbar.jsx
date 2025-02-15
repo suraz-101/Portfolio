@@ -41,7 +41,7 @@ export const Navigation = () => {
               <Link
                 to="/"
                 className={`text-decoration-none  ${
-                  currentPage === "" ? "text-black fw-bold" : `secondary`
+                  currentPage === "" ? "text-textColor fw-bold" : `secondary`
                 }`}
               >
                 Home
@@ -51,7 +51,9 @@ export const Navigation = () => {
               <Link
                 to="/service"
                 className={`text-decoration-none  ${
-                  currentPage === "service" ? "text-black fw-bold" : `secondary`
+                  currentPage === "service"
+                    ? "text-textColor fw-bold"
+                    : `secondary`
                 }`}
               >
                 Services
@@ -61,7 +63,9 @@ export const Navigation = () => {
               <Link
                 to="/about"
                 className={`text-decoration-none  ${
-                  currentPage === "about" ? "text-black fw-bold" : `secondary`
+                  currentPage === "about"
+                    ? "text-textColor fw-bold"
+                    : `secondary`
                 }`}
               >
                 About
@@ -71,7 +75,9 @@ export const Navigation = () => {
               <Link
                 to="/blogs"
                 className={`text-decoration-none  ${
-                  currentPage === "blogs" ? "text-black fw-bold" : `secondary`
+                  currentPage === "blogs"
+                    ? "text-textColor fw-bold"
+                    : `secondary`
                 }`}
               >
                 Blogs
@@ -81,7 +87,9 @@ export const Navigation = () => {
               <Link
                 to="/contact"
                 className={`text-decoration-none  ${
-                  currentPage === "contact" ? "text-black fw-bold" : `secondary`
+                  currentPage === "contact"
+                    ? "text-textColor fw-bold"
+                    : `secondary`
                 }`}
               >
                 Contact

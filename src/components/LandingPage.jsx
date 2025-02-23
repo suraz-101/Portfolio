@@ -79,7 +79,7 @@ export const LandingPage = () => {
         </div>
 
         <div className="  top-0 end-20  w-full lg:w-50 h-full flex justify-center  ">
-          {/* <Fade>
+          <Fade>
             <img
               // src={toggle === "light" ? image : darkImage}
               src={image}
@@ -88,7 +88,7 @@ export const LandingPage = () => {
               width="400px"
               loading="lazy"
             />
-          </Fade> */}
+          </Fade>
         </div>
       </div>
       <div className="  text-uppercase text-center py-28 quote font-serif text-3xl md:text-7xl tracking-wide leading-relaxed  primary bg-black ">

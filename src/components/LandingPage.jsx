@@ -68,7 +68,14 @@ export const LandingPage = () => {
               </div>
               <div className="buttons d-flex justify-content-evenly mt-4 w-full m-auto ">
                 <button className=" py-2 px-4 rounded bg-black shadow   text-white">
-                  Resume
+                  <a
+                    href="/assets/images/surajcv.pdf"
+                    download="Surajcv.pdf"
+                    type="application/pdf"
+                    className=" rounded bg-black shadow text-white no-underline inline-block"
+                  >
+                    Resume
+                  </a>
                 </button>
                 <button className="py-2 px-4 rounded  shadow hireBtn text-black bg-white">
                   Projects

@@ -46,11 +46,14 @@ export const LandingPage = () => {
                 </span>
               </h1>
               <p className="container w-full mt-4 font-serif fw-monospace description secondary">
-                I am passionate about my work and responsible for working on
-                both front-end and backend development processes. Skilled in
-                crafting user-centric web applications with clean code and
-                cutting-edge technology. Let's transform your ideas into digital
-                reality.
+                I am a passionate Digital Marketer currently studying MSc
+                Digital Marketing at the University of West London. With
+                expertise in both front-end and back-end development, I
+                specialize in crafting user-centric web applications and
+                implementing effective digital marketing strategies to drive
+                engagement and growth. If you’re looking to hire, feel free to
+                call me at [your phone number]. Let’s bring your ideas to life!
+                Let's transform your ideas into digital reality.
               </p>
               <div className="socialMediaIcons flex justify-center mt-4 text-textColor">
                 <a href="https://twitter.com/yourprofile" className="mx-2 ">
@@ -78,7 +81,7 @@ export const LandingPage = () => {
                   </a>
                 </button>
                 <button className="py-2 px-4 rounded  shadow hireBtn text-black bg-white">
-                  Projects
+                  Hire Me
                 </button>
               </div>
             </Fade>
